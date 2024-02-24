@@ -1,0 +1,189 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%); 
+  }
+
+h1{
+    text-align: center;
+    font-family: poppins;
+    font-size: 50px;
+    color:antiquewhite;
+}
+
+.gallery-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gallery {
+    position: relative;
+}
+
+.gallery-image {
+    max-width: 100%;
+    display: none;
+}
+
+.thumbnails {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 100px; /* Fixed width for each thumbnail */
+    height: 50px; /* Let the height adjust based on the aspect ratio */
+    margin: 0 5px 10px; /* Add bottom margin to separate rows */
+    cursor: pointer;
+    object-fit: cover; /* Ensure the image fills the container without stretching */
+}
+
+
+
+.slideshow-container {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slideshow {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+    width: fit-content;
+    height: 100px; /* Adjust height as needed */
+    position: relative;
+}
+
+.slide {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1; /* Initially hide all slides */
+    position: absolute;
+}
+
+.slide.active {
+    opacity: 1; /* Show active slide */
+    transition: opacity 1s ease; /* Transition for opacity */
+}
+
+
+
+.slide:nth-child(2) {
+    animation: slide2 12s infinite; /* Adjust animation duration as needed */
+}
+
+.slide:nth-child(3) {
+    animation: slide3 12s infinite; /* Adjust animation duration as needed */
+}
+.slide:nth-child(4) {
+    animation: slide4 12s infinite; /* Adjust animation duration as needed */
+}
+
+.slide:nth-child(5) {
+    animation: slide5 12s infinite; /* Adjust animation duration as needed */
+}
+
+.slide:nth-child(6) {
+    animation: slide6 12s infinite; /* Adjust animation duration as needed */
+}
+.slide:nth-child(7) {
+    animation: slide7 12s infinite; /* Adjust animation duration as needed */
+}
+
+.slide:nth-child(8) {
+    animation: slide8 12s infinite; /* Adjust animation duration as needed */
+}
+
+.slide:nth-child(9) {
+    animation: slide9 12s infinite; /* Adjust animation duration as needed */
+}
+
+
+
+@keyframes slide2 {
+    27% {
+        transform: translateX(-100%);
+    }
+    50%, 100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide3 {
+    0%, 49%, 50% {
+        transform: translateX(-100%);
+    }
+    75%, 100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slide4 {
+    0%, 100% {
+        transform: translateX(-100%);
+    }
+    75% {
+        transform: translateX(0);
+    }
+    26%, 100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slide5 {
+    27% {
+        transform: translateX(-100%);
+    }
+    50%, 100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide6 {
+    0%, 49%, 50% {
+        transform: translateX(-100%);
+    }
+    75%, 100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide7 {
+    0%, 100% {
+        transform: translateX(-100%);
+    }
+    75% {
+        transform: translateX(0);
+    }
+    26%, 100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slide8 {
+    27% {
+        transform: translateX(-100%);
+    }
+    50%, 100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide9 {
+    0%, 49%, 50% {
+        transform: translateX(-100%);
+    }
+    75%, 100% {
+        transform: translateX(0);
+    }
+}
+
